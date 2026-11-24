@@ -46,4 +46,19 @@
       f.focus();
     });
   });
+
+  // Aparición al hacer scroll (elementos .reveal / .rule); mejora progresiva
+  var toReveal = document.querySelectorAll(".reveal, .rule");
+  if (toReveal.length) {
+    if ("IntersectionObserver" in window) {
+      var io = new IntersectionObserver(function (entries) {
+        entries.forEach(function (en) {
+          if (en.isIntersecting) { en.target.classList.add("is-in"); io.unobserve(en.target); }
+        });
+      }, { threshold: 0.16, rootMargin: "0px 0px -8% 0px" });
+      toReveal.forEach(function (el) { io.observe(el); });
+    } else {
+      toReveal.forEach(function (el) { el.classList.add("is-in"); });
+    }
+  }
 })();

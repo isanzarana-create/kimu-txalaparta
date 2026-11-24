@@ -263,6 +263,7 @@ def head(t, title, desc, canon, alt_es, alt_eu, extra="", noindex=False):
 <link rel="preload" href="/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/fonts/ibm-plex-mono-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/kimu.css">
+<script>document.documentElement.className+=" js"</script>
 {extra}
 </head>'''
 
@@ -331,7 +332,7 @@ def home(lang):
     # 01
     offers = "".join(
         f'<article class="card"><span class="n">[0{i}]</span><h3>{e(h)}</h3><p>{e(p)}</p>' +
-        (f'<p style="margin-top:10px"><a href="{INMERSION_PATH[lang]}">{e(INMERSION[(lang,"more")])} →</a></p>' if i == 2 else '') +
+        (f'<p style="margin-top:10px"><a href="{INMERSION_PATH[lang]}">{e(INMERSION[lang]["more"])} →</a></p>' if i == 2 else '') +
         '</article>'
         for i,(h,p) in enumerate(t["offers"],1))
     why = "".join(f"<li>{e(w)}</li>" for w in t["why"])
@@ -458,69 +459,152 @@ LEGAL = {
 INMERSION_PATH = {"es": "/inmersion-kultural-txalaparta-euskadi/", "eu": "/eu/murgiltze-kulturala-txalaparta-euskadin/"}
 
 INMERSION = {
- ("es","title"): "Inmersión Kultural: txalaparta y cata en Euskadi | Kimu Txalaparta",
- ("es","desc"): "Concierto inmersivo de txalaparta con cata de sidra, txakoli o vino de Rioja Alavesa en sagardotegis, txokos y enclaves emblemáticos de Euskadi.",
- ("es","h1"): "Inmersión Kultural con Kimu Txalaparta: música ancestral y gastronomía vasca en una experiencia única",
- ("es","more"): "Descubre la experiencia",
- ("es","body"): f'''<p>Kimu Txalaparta propone una experiencia de inmersión cultural en Euskadi que une dos de los grandes patrimonios del País Vasco: la txalaparta, uno de sus instrumentos de percusión más antiguos y singulares, y una gastronomía reconocida internacionalmente. En un único formato, el visitante asiste a un concierto inmersivo en directo y participa en una cata de producto local, en enclaves emblemáticos de la geografía vasca.</p>
-<h2>Una experiencia, dos patrimonios</h2>
-<p>La Inmersión Kultural es una propuesta de turismo experiencial de entre 45 y 60 minutos de duración, concebida para que el público no solo escuche la txalaparta, sino que la viva de cerca: su ritmo, el diálogo entre sus intérpretes y su vínculo histórico con la cultura del caserío y de la sidra/vino. La actuación se acompaña de una cata de bebida autóctona, creando una sinergia singular entre la tradición musical y la tradición —e innovación— culinaria vasca.</p>
-<h2>Escenarios emblemáticos de Euskadi</h2>
-<p>La experiencia se celebra en lugares con identidad propia, seleccionados para reforzar la autenticidad del encuentro:</p>
-<ul><li>Sagardotegis (sidrerías tradicionales).</li><li>Restaurantes de cocina tradicional vasca.</li><li>Txokos (sociedades gastronómicas).</li><li>Museos y espacios culturales.</li><li>Otros enclaves de interés turístico y patrimonial.</li></ul>
-<h2>Maridaje con producto de la tierra</h2>
-<p>Durante el concierto, el público disfruta de una cata adaptada al territorio en el que se desarrolla la experiencia:</p>
-<ul><li><strong>Sagardoa (sidra natural vasca):</strong> emblema de la cultura de la sagardotegi y compañera histórica de la txalaparta.</li><li><strong>Txakoli:</strong> en Bizkaia y Gipuzkoa, el vino blanco joven, fresco y atlántico de la costa vasca.</li><li><strong>Vino de Rioja Alavesa:</strong> en las experiencias celebradas en Araba, tierra de bodegas y viñedo con tradición centenaria.</li></ul>
-<figure style="margin:28px 0"><img src="/img/sagardotegi.webp" width="480" height="480" alt="Sidra sirviéndose en un vaso, cultura de la sagardotegi vasca" loading="lazy"><figcaption style="padding:10px 0 0;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;line-height:1.35">La sagardotegi, cuna de la sidra natural vasca</figcaption></figure>
-<p>Así, cada sesión se convierte en un viaje sensorial por el territorio: el sonido de la madera y el sabor del producto local se funden en un mismo relato.</p>
-<h2>¿A quién va dirigida?</h2>
-<p>La Inmersión Kultural está diseñada para un público que busca experiencias auténticas y de calidad:</p>
-<ul><li>Turismo nacional e internacional que desea descubrir la cultura vasca más allá de lo convencional.</li><li>Visitantes que no conocen la txalaparta y quieren vivir un primer contacto memorable con ella.</li><li>Amantes de la gastronomía y del enoturismo interesados en el producto local de calidad.</li><li>Agencias de viaje, turoperadores, organizadores de eventos y empresas que buscan actividades diferenciales para grupos e incentivos.</li></ul>
-<h2>Formato de la experiencia</h2>
-<ul><li><strong>Duración:</strong> 45-60 minutos.</li><li><strong>Contenido:</strong> concierto inmersivo de txalaparta en directo y cata de bebida autóctona.</li><li><strong>Ubicación:</strong> espacios emblemáticos de Euskadi (sagardotegis, restaurantes tradicionales, txokos, museos y otros enclaves turísticos).</li><li><strong>Producto de la cata:</strong> sidra, txakoli o vino de Rioja Alavesa, según el territorio.</li></ul>
-<h2>Por qué vivir la Inmersión Kultural</h2>
-<p>Porque condensa en una sola experiencia dos de los grandes referentes que Euskadi ofrece al mundo: su patrimonio musical inmaterial y su cultura gastronómica. Una propuesta auténtica, cercana y diferente, que sitúa al visitante en el corazón de la identidad vasca, refuerza el atractivo turístico del territorio y convierte cada viaje en un recuerdo difícil de olvidar.</p>
-<p>¿Quieres incorporar la Inmersión Kultural a tu programa, evento o establecimiento? Ponte en contacto con Kimu Txalaparta y diseñaremos contigo la experiencia.</p>
-<p style="margin-top:28px"><a class="btn" href="/#contacto">Contratar {ICON["arrow"]}</a></p>''',
- ("eu","title"): "Murgiltze Kulturala: txalaparta eta dastaketa Euskadin | Kimu Txalaparta",
- ("eu","desc"): "Zuzeneko txalaparta-kontzertu murgiltzailea, sagardo, txakolin edo Arabako Errioxako ardo dastaketarekin, Euskadiko sagardotegi, txoko eta gune enblematikoetan.",
- ("eu","h1"): "Murgiltze Kulturala Kimu Txalapartarekin: antzinako musika eta euskal gastronomia esperientzia bakar batean",
- ("eu","more"): "Ezagutu esperientzia",
- ("eu","body"): f'''<p>Kimu Txalapartak Euskadin murgiltze kulturaleko esperientzia bat proposatzen du, Euskal Herriko bi ondare handi batzen dituena: txalaparta, perkusio-tresnarik zaharren eta berezienetako bat, eta nazioartean aitortutako gastronomia bat. Formatu bakar batean, bisitariak zuzeneko kontzertu murgiltzaile bat ikusten du eta bertako produktu baten dastaketan parte hartzen du, euskal geografiako gune enblematikoetan.</p>
-<h2>Esperientzia bat, bi ondare</h2>
-<p>Murgiltze Kulturala 45 eta 60 minutu arteko iraupena duen turismo esperientzialeko proposamen bat da, publikoak txalaparta entzun ez ezik, hurbiletik bizi dezan pentsatua: erritmoa, jotzaileen arteko elkarrizketa eta baserriko zein sagardoaren/ardoaren kulturarekin duen lotura historikoa. Emanaldia bertako edari baten dastaketarekin osatzen da, tradizio musikalaren eta euskal sukaldaritza-tradizioaren —eta berrikuntzaren— artean sinergia berezia sortuz.</p>
-<h2>Euskadiko gune enblematikoak</h2>
-<p>Esperientzia nortasun propioa duten lekuetan egiten da, topaketaren autentikotasuna indartzeko aukeratuak:</p>
-<ul><li>Sagardotegiak (sagardotegi tradizionalak).</li><li>Euskal sukaldaritza tradizionaleko jatetxeak.</li><li>Txokoak.</li><li>Museoak eta kultur guneak.</li><li>Turismo- eta ondare-interesa duten beste gune batzuk.</li></ul>
-<h2>Bertako produktuarekin maridaia</h2>
-<p>Kontzertuan zehar, publikoak esperientzia garatzen den lurraldera egokitutako dastaketa bat gozatzen du:</p>
-<ul><li><strong>Sagardoa (euskal sagardo naturala):</strong> sagardotegiaren kulturaren ikurra eta txalapartaren bidelagun historikoa.</li><li><strong>Txakolina:</strong> Bizkaian eta Gipuzkoan, euskal kostaldeko ardo zuri gaztea, freskoa eta atlantikoa.</li><li><strong>Arabako Errioxako ardoa:</strong> Araban egindako esperientzietan, upategi eta mahastien mendeetako tradizioa duen lurraldean.</li></ul>
-<figure style="margin:28px 0"><img src="/img/sagardotegi.webp" width="480" height="480" alt="Sagardoa edalontzi batean isurtzen, euskal sagardotegiaren kultura" loading="lazy"><figcaption style="padding:10px 0 0;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;line-height:1.35">Sagardotegia, euskal sagardo naturalaren jaiolekua</figcaption></figure>
-<p>Horrela, saio bakoitza lurraldean zeharreko bidaia sentsorial bihurtzen da: zurezko soinua eta bertako produktuaren zaporea narrazio bakar batean batzen dira.</p>
-<h2>Nori zuzenduta dago?</h2>
-<p>Murgiltze Kulturala esperientzia autentiko eta kalitatezkoen bila dabilen publikoarentzat diseinatuta dago:</p>
-<ul><li>Euskal kultura ohikoa baino harago ezagutu nahi duen barne- eta nazioarteko turismoa.</li><li>Txalaparta ezagutzen ez duten eta harekin lehen kontaktu gogoangarri bat bizi nahi duten bisitariak.</li><li>Bertako produktu kalitatezkoaren eta enoturismoaren zaleak.</li><li>Talde eta pizgarrietarako jarduera bereizgarriak bilatzen dituzten bidaia-agentziak, turoperadoreak, ekitaldi-antolatzaileak eta enpresak.</li></ul>
-<h2>Esperientziaren formatua</h2>
-<ul><li><strong>Iraupena:</strong> 45-60 minutu.</li><li><strong>Edukia:</strong> zuzeneko txalaparta-kontzertu murgiltzailea eta bertako edariaren dastaketa.</li><li><strong>Kokapena:</strong> Euskadiko gune enblematikoak (sagardotegiak, jatetxe tradizionalak, txokoak, museoak eta beste turismo-gune batzuk).</li><li><strong>Dastatutako produktua:</strong> sagardoa, txakolina edo Arabako Errioxako ardoa, lurraldearen arabera.</li></ul>
-<h2>Zergatik bizi Murgiltze Kulturala</h2>
-<p>Euskadik munduari eskaintzen dizkion bi erreferente handi esperientzia bakar batean biltzen dituelako: bere ondare musikal immateriala eta bere kultura gastronomikoa. Proposamen autentiko, hurbil eta ezberdina, bisitaria euskal identitatearen bihotzean jartzen duena, lurraldearen erakargarritasun turistikoa indartzen duena eta bidaia bakoitza ahazteko zaila den oroitzapen bihurtzen duena.</p>
-<p>Murgiltze Kulturala zure programan, ekitaldian edo establezimenduan txertatu nahi duzu? Jarri harremanetan Kimu Txalapartarekin eta elkarrekin diseinatuko dugu esperientzia.</p>
-<p style="margin-top:28px"><a class="btn" href="/eu/#contacto">Kontratatu {ICON["arrow"]}</a></p>''',
+ "es": {
+  "title": "Inmersión Kultural: txalaparta y cata en Euskadi | Kimu Txalaparta",
+  "desc": "Concierto inmersivo de txalaparta con cata de sidra, txakoli o vino de Rioja Alavesa en sagardotegis, txokos y enclaves emblemáticos de Euskadi.",
+  "more": "Descubre la experiencia",
+  "kicker": "Turismo experiencial",
+  "h1": "Inmersión Kultural con Kimu Txalaparta: música ancestral y gastronomía vasca en una experiencia única",
+  "lead": "Kimu Txalaparta propone una experiencia de inmersión cultural en Euskadi que une dos de los grandes patrimonios del País Vasco: la txalaparta, uno de sus instrumentos de percusión más antiguos y singulares, y una gastronomía reconocida internacionalmente. En un único formato, el visitante asiste a un concierto inmersivo en directo y participa en una cata de producto local, en enclaves emblemáticos de la geografía vasca.",
+  "facts": [("45-60′","Duración"),("2","Instrumentos: madera y piedra"),("100%","Formato acústico"),("3","Bebidas del territorio")],
+  "s1_h": "Una experiencia, dos patrimonios",
+  "s1_p": "La Inmersión Kultural es una propuesta de turismo experiencial de entre 45 y 60 minutos de duración, concebida para que el público no solo escuche la txalaparta, sino que la viva de cerca: su ritmo, el diálogo entre sus intérpretes y su vínculo histórico con la cultura del caserío y de la sidra/vino. La actuación se acompaña de una cata de bebida autóctona, creando una sinergia singular entre la tradición musical y la tradición —e innovación— culinaria vasca.",
+  "venues_h": "Escenarios emblemáticos de Euskadi",
+  "venues_lead": "La experiencia se celebra en lugares con identidad propia, seleccionados para reforzar la autenticidad del encuentro:",
+  "venues": ["Sagardotegis (sidrerías tradicionales)","Restaurantes de cocina tradicional vasca","Txokos (sociedades gastronómicas)","Museos y espacios culturales","Otros enclaves de interés turístico y patrimonial"],
+  "pairing_h": "Maridaje con producto de la tierra",
+  "pairing_lead": "Durante el concierto, el público disfruta de una cata adaptada al territorio en el que se desarrolla la experiencia:",
+  "pairing": [("Sagardoa","sidra natural vasca: emblema de la cultura de la sagardotegi y compañera histórica de la txalaparta."),
+              ("Txakoli","en Bizkaia y Gipuzkoa, el vino blanco joven, fresco y atlántico de la costa vasca."),
+              ("Vino de Rioja Alavesa","en las experiencias celebradas en Araba, tierra de bodegas y viñedo con tradición centenaria.")],
+  "pairing_note": "Así, cada sesión se convierte en un viaje sensorial por el territorio: el sonido de la madera y el sabor del producto local se funden en un mismo relato.",
+  "photo_alt": "Sidra sirviéndose en un vaso, cultura de la sagardotegi vasca",
+  "photo_cap": "La sagardotegi, cuna de la sidra natural vasca",
+  "audience_h": "¿A quién va dirigida?",
+  "audience_lead": "La Inmersión Kultural está diseñada para un público que busca experiencias auténticas y de calidad:",
+  "audience": ["Turismo nacional e internacional que desea descubrir la cultura vasca más allá de lo convencional.","Visitantes que no conocen la txalaparta y quieren vivir un primer contacto memorable con ella.","Amantes de la gastronomía y del enoturismo interesados en el producto local de calidad.","Agencias de viaje, turoperadores, organizadores de eventos y empresas que buscan actividades diferenciales para grupos e incentivos."],
+  "format_h": "Formato de la experiencia",
+  "format": [("Duración","45-60 minutos"),("Contenido","Concierto inmersivo de txalaparta en directo y cata de bebida autóctona"),("Ubicación","Espacios emblemáticos de Euskadi: sagardotegis, restaurantes tradicionales, txokos, museos y otros enclaves turísticos"),("Producto de la cata","Sidra, txakoli o vino de Rioja Alavesa, según el territorio")],
+  "why_h": "Por qué vivir la Inmersión Kultural",
+  "why_p": "Porque condensa en una sola experiencia dos de los grandes referentes que Euskadi ofrece al mundo: su patrimonio musical inmaterial y su cultura gastronómica. Una propuesta auténtica, cercana y diferente, que sitúa al visitante en el corazón de la identidad vasca, refuerza el atractivo turístico del territorio y convierte cada viaje en un recuerdo difícil de olvidar.",
+  "cta_p": "¿Quieres incorporar la Inmersión Kultural a tu programa, evento o establecimiento? Ponte en contacto con Kimu Txalaparta y diseñaremos contigo la experiencia.",
+  "cta_label": "Contratar", "cta_href": "/#contacto",
+ },
+ "eu": {
+  "title": "Murgiltze Kulturala: txalaparta eta dastaketa Euskadin | Kimu Txalaparta",
+  "desc": "Zuzeneko txalaparta-kontzertu murgiltzailea, sagardo, txakolin edo Arabako Errioxako ardo dastaketarekin, Euskadiko sagardotegi, txoko eta gune enblematikoetan.",
+  "more": "Ezagutu esperientzia",
+  "kicker": "Turismo esperientziala",
+  "h1": "Murgiltze Kulturala Kimu Txalapartarekin: antzinako musika eta euskal gastronomia esperientzia bakar batean",
+  "lead": "Kimu Txalapartak Euskadin murgiltze kulturaleko esperientzia bat proposatzen du, Euskal Herriko bi ondare handi batzen dituena: txalaparta, perkusio-tresnarik zaharren eta berezienetako bat, eta nazioartean aitortutako gastronomia bat. Formatu bakar batean, bisitariak zuzeneko kontzertu murgiltzaile bat ikusten du eta bertako produktu baten dastaketan parte hartzen du, euskal geografiako gune enblematikoetan.",
+  "facts": [("45-60′","Iraupena"),("2","Tresnak: zura eta harria"),("%100","Formatu akustikoa"),("3","Bertako edari")],
+  "s1_h": "Esperientzia bat, bi ondare",
+  "s1_p": "Murgiltze Kulturala 45 eta 60 minutu arteko iraupena duen turismo esperientzialeko proposamen bat da, publikoak txalaparta entzun ez ezik, hurbiletik bizi dezan pentsatua: erritmoa, jotzaileen arteko elkarrizketa eta baserriko zein sagardoaren/ardoaren kulturarekin duen lotura historikoa. Emanaldia bertako edari baten dastaketarekin osatzen da, tradizio musikalaren eta euskal sukaldaritza-tradizioaren —eta berrikuntzaren— artean sinergia berezia sortuz.",
+  "venues_h": "Euskadiko gune enblematikoak",
+  "venues_lead": "Esperientzia nortasun propioa duten lekuetan egiten da, topaketaren autentikotasuna indartzeko aukeratuak:",
+  "venues": ["Sagardotegiak (sagardotegi tradizionalak)","Euskal sukaldaritza tradizionaleko jatetxeak","Txokoak","Museoak eta kultur guneak","Turismo- eta ondare-interesa duten beste gune batzuk"],
+  "pairing_h": "Bertako produktuarekin maridaia",
+  "pairing_lead": "Kontzertuan zehar, publikoak esperientzia garatzen den lurraldera egokitutako dastaketa bat gozatzen du:",
+  "pairing": [("Sagardoa","euskal sagardo naturala: sagardotegiaren kulturaren ikurra eta txalapartaren bidelagun historikoa."),
+              ("Txakolina","Bizkaian eta Gipuzkoan, euskal kostaldeko ardo zuri gaztea, freskoa eta atlantikoa."),
+              ("Arabako Errioxako ardoa","Araban egindako esperientzietan, upategi eta mahastien mendeetako tradizioa duen lurraldean.")],
+  "pairing_note": "Horrela, saio bakoitza lurraldean zeharreko bidaia sentsorial bihurtzen da: zurezko soinua eta bertako produktuaren zaporea narrazio bakar batean batzen dira.",
+  "photo_alt": "Sagardoa edalontzi batean isurtzen, euskal sagardotegiaren kultura",
+  "photo_cap": "Sagardotegia, euskal sagardo naturalaren jaiolekua",
+  "audience_h": "Nori zuzenduta dago?",
+  "audience_lead": "Murgiltze Kulturala esperientzia autentiko eta kalitatezkoen bila dabilen publikoarentzat diseinatuta dago:",
+  "audience": ["Euskal kultura ohikoa baino harago ezagutu nahi duen barne- eta nazioarteko turismoa.","Txalaparta ezagutzen ez duten eta harekin lehen kontaktu gogoangarri bat bizi nahi duten bisitariak.","Bertako produktu kalitatezkoaren eta enoturismoaren zaleak.","Talde eta pizgarrietarako jarduera bereizgarriak bilatzen dituzten bidaia-agentziak, turoperadoreak, ekitaldi-antolatzaileak eta enpresak."],
+  "format_h": "Esperientziaren formatua",
+  "format": [("Iraupena","45-60 minutu"),("Edukia","Zuzeneko txalaparta-kontzertu murgiltzailea eta bertako edariaren dastaketa"),("Kokapena","Euskadiko gune enblematikoak: sagardotegiak, jatetxe tradizionalak, txokoak, museoak eta beste turismo-gune batzuk"),("Dastatutako produktua","Sagardoa, txakolina edo Arabako Errioxako ardoa, lurraldearen arabera")],
+  "why_h": "Zergatik bizi Murgiltze Kulturala",
+  "why_p": "Euskadik munduari eskaintzen dizkion bi erreferente handi esperientzia bakar batean biltzen dituelako: bere ondare musikal immateriala eta bere kultura gastronomikoa. Proposamen autentiko, hurbil eta ezberdina, bisitaria euskal identitatearen bihotzean jartzen duena, lurraldearen erakargarritasun turistikoa indartzen duena eta bidaia bakoitza ahazteko zaila den oroitzapen bihurtzen duena.",
+  "cta_p": "Murgiltze Kulturala zure programan, ekitaldian edo establezimenduan txertatu nahi duzu? Jarri harremanetan Kimu Txalapartarekin eta elkarrekin diseinatuko dugu esperientzia.",
+  "cta_label": "Kontratatu", "cta_href": "/eu/#contacto",
+ },
 }
 
 def inmersion_page(lang):
     t = T[lang]
+    m = INMERSION[lang]
     es_p, eu_p = INMERSION_PATH["es"], INMERSION_PATH["eu"]
     path = INMERSION_PATH[lang]
-    title = INMERSION[(lang,"title")]
-    desc = INMERSION[(lang,"desc")]
-    h1 = INMERSION[(lang,"h1")]
-    body = INMERSION[(lang,"body")]
     home_p = t["path"]
-    out = [head(t, title, desc, path, es_p, eu_p), "<body>",
+
+    facts = "".join(f'<div class="reveal" style="--d:{.05*i}s"><strong>{e(a)}</strong><span>{e(b)}</span></div>' for i,(a,b) in enumerate(m["facts"]))
+    venues = "".join(f'<article class="card reveal" style="--d:{.06*i}s"><span class="n">[{i+1:02d}]</span>{e(v)}</article>' for i,v in enumerate(m["venues"]))
+    pairing_items = "".join(f'<li class="reveal" style="--d:{.07*i}s"><strong>{e(a)}</strong><p>{e(b)}</p></li>' for i,(a,b) in enumerate(m["pairing"]))
+    audience = "".join(f'<article class="card reveal" style="--d:{.06*i}s"><span class="n">[{i+1:02d}]</span><p>{e(a)}</p></article>' for i,a in enumerate(m["audience"]))
+    fmt = "".join(f'<div class="reveal" style="--d:{.06*i}s"><dt>{e(a)}</dt><dd>{e(b)}</dd></div>' for i,(a,b) in enumerate(m["format"]))
+
+    out = [head(t, m["title"], m["desc"], path, es_p, eu_p), "<body>",
            topbar(t, home_p, es_p, eu_p, home_p),
-           f'<main id="main" class="legal"><h1>{e(h1)}</h1>{body}<p style="margin-top:40px"><a class="btn ghost" href="{home_p}">{t["back"]}</a></p></main>',
-           footer(t)]
+           '<main id="main">']
+
+    # Portada de la página
+    out.append(f'''<section class="sec" style="padding-bottom:0" aria-label="{e(m["h1"])}">
+<div class="imm-hero">
+<p class="kicker reveal">{e(m["kicker"])}</p>
+<h1 class="reveal" style="--d:.05s">{e(m["h1"])}</h1>
+<p class="box reveal" style="--d:.12s">{e(m["lead"])}</p>
+<div class="facts">{facts}</div>
+</div>
+</section>''')
+
+    # I — Una experiencia, dos patrimonios
+    out.append(f'''<section class="sec" aria-labelledby="imm-1-t">
+<h2 class="sec-h reveal" id="imm-1-t"><span class="idx">[I]</span>{e(m["s1_h"])}</h2>
+<p class="reveal" style="max-width:62ch">{e(m["s1_p"])}</p>
+</section>''')
+
+    # II — Escenarios emblemáticos
+    out.append(f'''<section class="sec" aria-labelledby="imm-2-t">
+<h2 class="sec-h reveal" id="imm-2-t"><span class="idx">[II]</span>{e(m["venues_h"])}</h2>
+<p class="reveal" style="max-width:62ch">{e(m["venues_lead"])}</p>
+<div class="imm-venues">{venues}</div>
+</section>''')
+
+    # III — Maridaje (con la foto)
+    out.append(f'''<section class="sec" aria-labelledby="imm-3-t">
+<h2 class="sec-h reveal" id="imm-3-t"><span class="idx">[III]</span>{e(m["pairing_h"])}</h2>
+<p class="reveal" style="max-width:62ch;margin-bottom:clamp(24px,3.4vw,40px)">{e(m["pairing_lead"])}</p>
+<div class="pairing">
+<figure class="reveal">
+<span class="ph"><img src="/img/sagardotegi.webp" width="480" height="480" alt="{e(m["photo_alt"])}" loading="lazy"></span>
+<figcaption>{e(m["photo_cap"])}</figcaption>
+</figure>
+<ul class="list">{pairing_items}</ul>
+<p class="note reveal">{e(m["pairing_note"])}</p>
+</div>
+</section>''')
+
+    # IV — ¿A quién va dirigida?
+    out.append(f'''<section class="sec" aria-labelledby="imm-4-t">
+<h2 class="sec-h reveal" id="imm-4-t"><span class="idx">[IV]</span>{e(m["audience_h"])}</h2>
+<p class="reveal" style="max-width:62ch">{e(m["audience_lead"])}</p>
+<div class="imm-aud">{audience}</div>
+</section>''')
+
+    # V — Formato de la experiencia
+    out.append(f'''<section class="sec" aria-labelledby="imm-5-t">
+<h2 class="sec-h reveal" id="imm-5-t"><span class="idx">[V]</span>{e(m["format_h"])}</h2>
+<dl class="spec">{fmt}</dl>
+</section>''')
+
+    # VI — Por qué + CTA
+    out.append(f'''<section class="sec" aria-labelledby="imm-6-t">
+<h2 class="sec-h reveal" id="imm-6-t"><span class="idx">[VI]</span>{e(m["why_h"])}</h2>
+<div class="imm-why reveal">
+<p>{e(m["why_p"])}</p>
+<p>{e(m["cta_p"])}</p>
+</div>
+<p class="reveal" style="margin-top:8px;display:flex;gap:14px;flex-wrap:wrap">
+<a class="btn" href="{m["cta_href"]}">{e(m["cta_label"])} {ICON["arrow"]}</a>
+<a class="btn ghost" href="{home_p}">{t["back"]}</a>
+</p>
+</section>''')
+
+    out.append("</main>")
+    out.append(footer(t))
     return "\n".join(out)
 
 def simple_page(lang, title, body, path, alt_es, alt_eu, noindex=False):
