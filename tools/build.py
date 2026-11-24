@@ -565,17 +565,12 @@ def inmersion_page(lang):
 <div class="imm-venues">{venues}</div>
 </section>''')
 
-    # III — Maridaje (con la foto)
+    # III — Maridaje (sin foto)
     out.append(f'''<section class="sec" aria-labelledby="imm-3-t">
 <h2 class="sec-h reveal" id="imm-3-t"><span class="idx">[III]</span>{e(m["pairing_h"])}</h2>
 <p class="reveal" style="max-width:62ch;margin-bottom:clamp(24px,3.4vw,40px)">{e(m["pairing_lead"])}</p>
 <div class="pairing">
-<figure class="reveal">
-<span class="ph"><img src="/img/sagardotegi.webp" width="480" height="480" alt="{e(m["photo_alt"])}" loading="lazy"></span>
-<figcaption>{e(m["photo_cap"])}</figcaption>
-</figure>
 <ul class="list">{pairing_items}</ul>
-<p class="note reveal">{e(m["pairing_note"])}</p>
 </div>
 </section>''')
 
