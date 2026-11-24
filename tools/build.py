@@ -46,13 +46,15 @@ VIDEOS = [  # id, título, miniatura grande
  ("wCQIxSptv14", "«Tetris / Korobeiniki»", False),
  ("bU86T62306g", "«Primavera» (L. Einaudi) · arpa eta txalaparta", False),
 ]
-PHOTOS = ["wCQIxSptv14", "54pJoDG15Io", "X9DWKymqqak", "8ttP5DT_TsE", "A3yv-FnBFF0", "bU86T62306g"]
+# Fotos reales de Sergio y Nagore en directo (sustituyen a 4 de las 6 capturas de vídeo de antes)
+PHOTOS = ["kimu-sergio-nagore-01", "kimu-sergio-nagore-02", "kimu-sergio-nagore-03", "kimu-sergio-nagore-04", "v-A3yv-FnBFF0", "v-bU86T62306g"]
 
 T = {
 "es": {
  "path": "/", "html_lang": "es", "other": "eu",
- "title": "Kimu Txalaparta · Txalaparta de madera y de piedra · Conciertos y contratación",
- "desc": "Kimu Txalaparta: txalaparta de madera y de piedra desde Donostia. Conciertos, inmersión cultural y actuaciones didácticas para instituciones, festivales y asociaciones. Contratación: Musubigara®.",
+ "title": "Kimu Txalaparta · Txalaparta de Euskadi · Conciertos y contratación",
+ "desc": "Kimu Txalaparta: txalaparta de Euskadi (madera y piedra), desde Donostia. Conciertos, inmersión txalaparta y actuaciones didácticas para instituciones, festivales y asociaciones. Contratación: Musubigara®.",
+ "keywords": "txalaparta, txalaparta Euskadi, inmersión txalaparta, inmersión cultural txalaparta, Kimu Txalaparta, conciertos de txalaparta",
  "skip": "Saltar al contenido",
  "nav": [("kimu","Kimu"),("biografia","Biografía"),("propuesta","Propuesta"),("multimedia","Multimedia"),("colaboraciones","Colaboraciones"),("contacto","Contacto")],
  "menu_open": "Abrir menú", "menu_close": "Cerrar menú", "lang_label": "Idioma",
@@ -61,13 +63,16 @@ T = {
  "hero_side": ["Conciertos, inmersión cultural y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales.",
                "En euskera y en castellano. Gestión cultural y contratación: Musubigara®."],
  "cta_hire": "Contratar", "cta_watch": "Ver vídeos",
- "hero_cap": "Arditurriko meategia, Oiartzun",
+ "hero_cap": "Sergio y Nagore, en directo",
+ "hero_alt": "Sergio y Nagore, de Kimu Txalaparta, tocando en directo",
  "ticker": "_Kimu Txalaparta_Zura eta harria_Madera y piedra_Txalaparta_",
+ "nav_imm": "Inmersión Kultural",
  # 01
  "kimu_h": "Kimu",
  "kimu_box": "Somos Kimu Txalaparta: un grupo de Donostia que toca el instrumento más rítmico de la cultura vasca —en madera y en piedra— y lo lleva más allá de la sidrería: a escenarios, festivales, plazas, cuevas, minas e iglesias.",
  "kimu_who": "La txalaparta se toca a dúo: dos personas, cuatro makilas y un diálogo de golpes que se construye en directo. Nosotros partimos de ese diálogo tradicional y lo abrimos a la melodía, a la creación propia y al encuentro con otras músicas.",
  "offers_k": "¿Qué ofrecemos?",
+ "offer_featured": "Nuestra propuesta estrella",
  "offers": [
   ("Concierto", "Repertorio propio y tradicional para escenarios, festivales y fiestas. Para más de 100 personas, con una sonorización sencilla."),
   ("Inmersión cultural", "Formato íntimo y 100 % acústico para menos de 100 personas: escuchar, preguntar y acercarse al instrumento."),
@@ -135,8 +140,9 @@ T = {
 },
 "eu": {
  "path": "/eu/", "html_lang": "eu", "other": "es",
- "title": "Kimu Txalaparta · Zurezko eta harrizko txalaparta · Kontzertuak eta kontratazioa",
- "desc": "Kimu Txalaparta: zurezko eta harrizko txalaparta Donostiatik. Kontzertuak, murgiltze kulturala eta emanaldi pedagogikoak udal, erakunde, jaialdi eta elkarteentzat. Kontratazioa: Musubigara®.",
+ "title": "Kimu Txalaparta · Txalaparta Euskadin · Kontzertuak eta kontratazioa",
+ "desc": "Kimu Txalaparta: txalaparta Euskadin (zura eta harria), Donostiatik. Kontzertuak, murgiltze kulturala (txalaparta esperientzia) eta emanaldi pedagogikoak udal, erakunde, jaialdi eta elkarteentzat. Kontratazioa: Musubigara®.",
+ "keywords": "txalaparta, txalaparta Euskadi, murgiltze kulturala txalaparta, Kimu Txalaparta, txalaparta kontzertuak",
  "skip": "Edukira joan",
  "nav": [("kimu","Kimu"),("biografia","Biografia"),("propuesta","Proposamena"),("multimedia","Multimedia"),("colaboraciones","Lankidetzak"),("contacto","Harremana")],
  "menu_open": "Menua ireki", "menu_close": "Menua itxi", "lang_label": "Hizkuntza",
@@ -145,12 +151,15 @@ T = {
  "hero_side": ["Kontzertuak, murgiltze kulturala eta emanaldi pedagogikoak udal, erakunde, jaialdi, elkarte eta kultur eragileentzat.",
                "Euskaraz eta gaztelaniaz. Kultur kudeaketa eta kontratazioa: Musubigara®."],
  "cta_hire": "Kontratatu", "cta_watch": "Bideoak ikusi",
- "hero_cap": "Arditurriko meategia, Oiartzun",
+ "hero_cap": "Sergio eta Nagore, zuzenean",
+ "hero_alt": "Sergio eta Nagore, Kimu Txalapartakoak, zuzenean jotzen",
  "ticker": "_Kimu Txalaparta_Zura eta harria_Madera y piedra_Txalaparta_",
+ "nav_imm": "Murgiltze Kulturala",
  "kimu_h": "Kimu",
  "kimu_box": "Kimu Txalaparta gara: euskal kulturako musika-tresnarik erritmikoena —zurezkoa eta harrizkoa— jotzen duen Donostiako taldea. Sagardotegitik haratago eramaten dugu: agertokietara, jaialdietara, plazetara, kobazuloetara, meategietara eta elizetara.",
  "kimu_who": "Txalaparta binaka jotzen da: bi lagun, lau makila eta zuzenean eraikitzen den kolpeen elkarrizketa. Guk elkarrizketa tradizional horretatik abiatuta, melodiara, sorkuntza propiora eta beste musika batzuekiko topaketara zabaltzen dugu.",
  "offers_k": "Zer eskaintzen dugu?",
+ "offer_featured": "Gure proposamen nagusia",
  "offers": [
   ("Kontzertua", "Errepertorio propioa eta tradizionala agertoki, jaialdi eta jaietarako. 100 pertsonatik gora, soinu-sistema sinple batekin."),
   ("Murgiltze kulturala", "Formatu hurbila eta % 100 akustikoa, 100 pertsonatik beherako taldeentzat: entzun, galdetu eta tresnara hurbildu."),
@@ -231,8 +240,10 @@ def lang_nav(t, here_es, here_eu):
             f'<a href="{here_es}" hreflang="es" lang="es"{" aria-current=\"true\"" if cur=="es" else ""}>Cast</a></nav>')
 
 def nav(t, prefix=""):
-    return '<ul class="nav">' + "".join(
-        f'<li><a href="{prefix}#{i}"><sup>[0{n}]</sup>{e(l)}</a></li>' for n,(i,l) in enumerate(t["nav"], start=1)) + "</ul>"
+    items = "".join(
+        f'<li><a href="{prefix}#{i}"><sup>[0{n}]</sup>{e(l)}</a></li>' for n,(i,l) in enumerate(t["nav"], start=1))
+    items += f'<li><a class="nav-feat" href="{INMERSION_PATH[t["html_lang"]]}">{e(t["nav_imm"])}</a></li>'
+    return '<ul class="nav">' + items + "</ul>"
 
 def head(t, title, desc, canon, alt_es, alt_eu, extra="", noindex=False):
     robots = '<meta name="robots" content="noindex">' if noindex else ""
@@ -244,6 +255,7 @@ def head(t, title, desc, canon, alt_es, alt_eu, extra="", noindex=False):
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>{e(title)}</title>
 <meta name="description" content="{e(desc)}">
+<meta name="keywords" content="{e(t["keywords"])}">
 {robots}
 <link rel="canonical" href="{BASE}{canon}">
 <link rel="alternate" hreflang="es" href="{BASE}{alt_es}">
@@ -303,6 +315,7 @@ def jsonld(t):
       "url": BASE + t["path"],
       "image": BASE + "/img/og.jpg",
       "description": t["desc"],
+      "keywords": t["keywords"],
       "genre": ["Txalaparta", "Música tradicional vasca", "Percusión"],
       "foundingDate": "2012",
       "foundingLocation": {"@type": "Place", "name": "Donostia / San Sebastián"},
@@ -323,54 +336,62 @@ def home(lang):
     # Portada
     out.append(f'''<section class="hero" aria-label="Kimu Txalaparta">
 <h1 class="vh">Kimu Txalaparta</h1>
-<div class="grid hero-grid">
+<div class="grid hero-land">
 <p class="box hero-box">{t["hero_box"]}</p>
 <div class="hero-side">{"".join(f"<p>{e(p).replace('Musubigara®','<a href=\"'+MUSUBI+'\" target=\"_blank\" rel=\"noopener\">Musubigara®</a>')}</p>" for p in t["hero_side"])}</div>
 <div class="hero-ctas"><a class="btn" href="#contacto">{t["cta_hire"]} {ICON["arrow"]}</a><a class="btn ghost" href="#multimedia">{t["cta_watch"]}</a></div>
-<figure class="hero-img"><img src="/img/v-d8M4dUgAjjE-l.webp" width="1280" height="720" alt="Kimu Txalaparta, Arditurri" fetchpriority="high"><figcaption>{t["hero_cap"]}</figcaption></figure>
+</div>
+<div class="grid hero-photo">
+<figure class="hero-img"><img src="/img/kimu-sergio-nagore-hero-l.webp" width="1280" height="720" alt="{e(t["hero_alt"])}" fetchpriority="high"><figcaption>{e(t["hero_cap"])}</figcaption></figure>
 </div></section>
 <div class="ticker" aria-hidden="true"><span>{(e(t["ticker"])*6)}</span></div>''')
     # 01
     offers = "".join(
-        f'<article class="card"><span class="n">[0{i}]</span><h3>{e(h)}</h3><p>{e(p)}</p>' +
-        (f'<p style="margin-top:10px"><a href="{INMERSION_PATH[lang]}">{e(INMERSION[lang]["more"])} →</a></p>' if i == 2 else '') +
+        f'<article class="card{" feat" if i == 2 else ""}">' +
+        (f'<span class="feat-badge">★ {e(t["offer_featured"])}</span>' if i == 2 else '') +
+        f'<span class="n">[0{i}]</span><h3>{e(h)}</h3><p>{e(p)}</p>' +
+        (f'<p style="margin-top:10px"><a href="{INMERSION_PATH[lang]}"><strong>{e(INMERSION[lang]["more"])}</strong> →</a></p>' if i == 2 else '') +
         '</article>'
         for i,(h,p) in enumerate(t["offers"],1))
     why = "".join(f"<li>{e(w).replace('Musubigara®','<a href=\"'+MUSUBI+'\" target=\"_blank\" rel=\"noopener\">Musubigara®</a>')}</li>" for w in t["why"])
-    out.append(f'''<section class="sec" id="kimu" aria-labelledby="kimu-t">
-<h2 class="sec-h" id="kimu-t"><span class="idx">[01]</span>{t["kimu_h"]}</h2>
+    out.append(f'''<details class="sec acc" id="kimu" open>
+<summary><h2 class="sec-h" id="kimu-t"><span class="idx">[01]</span>{t["kimu_h"]}</h2></summary>
+<div class="acc-body">
 <div class="intro"><p class="box">{e(t["kimu_box"])}</p><p class="who">{e(t["kimu_who"])}</p></div>
 <p class="kicker" style="margin-top:56px">{t["offers_k"]}</p>
 <div class="offers" style="margin-top:0">{offers}</div>
 <div class="why"><h3>{t["why_h"]}</h3><ul>{why}</ul></div>
-</section>''')
+</div></details>''')
     # 02
     facts = "".join(f"<div><strong>{a}</strong><span>{e(b)}</span></div>" for a,b in t["facts"])
-    out.append(f'''<section class="sec" id="biografia" aria-labelledby="bio-t">
-<h2 class="sec-h" id="bio-t"><span class="idx">[02]</span>{t["bio_h"]}</h2>
+    out.append(f'''<details class="sec acc" id="biografia" open>
+<summary><h2 class="sec-h" id="bio-t"><span class="idx">[02]</span>{t["bio_h"]}</h2></summary>
+<div class="acc-body">
 <div class="bio"><figure><img src="/img/v-54pJoDG15Io-l.webp" width="1280" height="720" alt="{e(t["bio_alt"])}" loading="lazy"></figure>
 <div class="txt">{"".join(f"<p>{p}</p>" for p in t["bio"])}</div>
 <div class="facts">{facts}</div></div>
-</section>''')
+</div></details>''')
     # 03
     spec = "".join(f"<div><dt>{e(a)}</dt><dd>{b}</dd></div>" for a,b in t["spec"])
     instr = "".join(f'<article><img src="/img/{img}.webp" width="960" height="540" alt="{e(alt)}" loading="lazy"><div class="in"><h3>{e(h)}</h3><p>{e(p)}</p></div></article>' for img,h,p,alt in t["instr"])
     rider_pdf = f"/descargas/kimu-txalaparta-rider-{lang}.pdf"
-    out.append(f'''<section class="sec" id="propuesta" aria-labelledby="prop-t">
-<h2 class="sec-h" id="prop-t"><span class="idx">[03]</span>{t["prop_h"]}</h2>
+    out.append(f'''<details class="sec acc" id="propuesta" open>
+<summary><h2 class="sec-h" id="prop-t"><span class="idx">[03]</span>{t["prop_h"]}</h2></summary>
+<div class="acc-body">
 <dl class="spec">{spec}</dl>
 <div class="instr">{instr}</div>
 <div class="rider"><div class="box"><h3>{t["rider_h"]}</h3>{"".join(f"<p>{r}</p>" for r in t["rider"])}</div>
 <div class="dl"><a class="btn" href="{rider_pdf}" download>{ICON["dl"]} {t["rider_dl"]}</a><p>{e(t["rider_note"])}</p></div></div>
-</section>''')
+</div></details>''')
     # 04
     vids = "".join(
         f'<figure class="video{" big" if big else ""}"><button class="play" type="button" data-yt="{vid}" data-title="{e(title)}" aria-label="{t["play"]}: {e(title)}">'
         f'<img src="/img/v-{vid}{"-l" if big else ""}.webp" alt="" loading="lazy" width="960" height="540"></button><figcaption>{e(title)}</figcaption></figure>'
         for vid,title,big in VIDEOS) + f'<a class="video more" href="{YT}" target="_blank" rel="noopener"><span>{t["videos_more"]} ↗</span></a>'
-    photos = "".join(f'<a href="/img/v-{p}-l.webp" target="_blank" rel="noopener"><img src="/img/v-{p}.webp" alt="{e(t["photo_alt"])}" loading="lazy" width="960" height="540"></a>' for p in PHOTOS)
-    out.append(f'''<section class="sec" id="multimedia" aria-labelledby="mm-t">
-<h2 class="sec-h" id="mm-t"><span class="idx">[04]</span>{t["mm_h"]}</h2>
+    photos = "".join(f'<a href="/img/{p}-l.webp" target="_blank" rel="noopener"><img src="/img/{p}.webp" alt="{e(t["photo_alt"])}" loading="lazy" width="960" height="540"></a>' for p in PHOTOS)
+    out.append(f'''<details class="sec acc" id="multimedia" open>
+<summary><h2 class="sec-h" id="mm-t"><span class="idx">[04]</span>{t["mm_h"]}</h2></summary>
+<div class="acc-body">
 <div class="sub" style="margin-top:0"><h3>_{t["videos_h"]}</h3><a href="{YT}" target="_blank" rel="noopener">{t["videos_more"]} ↗</a></div>
 <div class="videos">{vids}</div>
 <p class="yt-note">{e(t["yt_note"])}</p>
@@ -380,17 +401,19 @@ def home(lang):
 <div class="photos">{photos}</div>
 <div class="sub"><h3>_{t["ig_h"]}</h3><a href="{IG}" target="_blank" rel="noopener">@kimutxalaparta ↗</a></div>
 <div class="ig"><a class="handle" href="{IG}" target="_blank" rel="noopener">@kimutxalaparta</a><span>{e(t["ig_txt"])}</span></div>
-</section>''')
+</div></details>''')
     # 05
     names = ", ".join(n if n.startswith("<em") else f"<span>{e(n)}</span>" for n in t["col_names"])
-    out.append(f'''<section class="sec" id="colaboraciones" aria-labelledby="col-t">
-<h2 class="sec-h" id="col-t"><span class="idx">[05]</span>{t["col_h"]}</h2>
+    out.append(f'''<details class="sec acc" id="colaboraciones" open>
+<summary><h2 class="sec-h" id="col-t"><span class="idx">[05]</span>{t["col_h"]}</h2></summary>
+<div class="acc-body">
 <div class="collab"><p class="lead">{e(t["col_lead"])}</p><p class="names">{names}{t["col_end"]}</p></div>
-</section>''')
+</div></details>''')
     # 06
     opts = "".join(f"<option>{e(o)}</option>" for o in f["types"])
-    out.append(f'''<section class="sec" id="contacto" aria-labelledby="con-t">
-<h2 class="sec-h" id="con-t"><span class="idx">[06]</span>{t["con_h"]}</h2>
+    out.append(f'''<details class="sec acc" id="contacto" open>
+<summary><h2 class="sec-h" id="con-t"><span class="idx">[06]</span>{t["con_h"]}</h2></summary>
+<div class="acc-body">
 <div class="contact">
 <div class="direct"><p class="box">{e(t["con_box"])}</p>
 <p class="kicker">{t["con_mgmt"]} · <a href="{MUSUBI}" target="_blank" rel="noopener">Musubigara®</a></p>
@@ -410,7 +433,7 @@ def home(lang):
 <div class="full"><label class="chk"><input type="checkbox" name="consentimiento" value="si" required><span>{f["consent"]}</span></label></div>
 <div class="full"><button class="btn" type="submit">{f["send"]} {ICON["arrow"]}</button></div>
 </form></div>
-</section>''')
+</div></details>''')
     out.append("</main>")
     out.append(footer(t))
     return "\n".join(out)
@@ -462,7 +485,7 @@ INMERSION_PATH = {"es": "/inmersion-kultural-txalaparta-euskadi/", "eu": "/eu/mu
 
 INMERSION = {
  "es": {
-  "title": "Inmersión Kultural: txalaparta y cata en Euskadi | Kimu Txalaparta",
+  "title": "Inmersión Txalaparta (Kultural) en Euskadi | Kimu Txalaparta",
   "desc": "Concierto inmersivo de txalaparta con cata de sidra, txakoli o vino de Rioja Alavesa en sagardotegis, txokos y enclaves emblemáticos de Euskadi.",
   "more": "Descubre la experiencia",
   "kicker": "Turismo experiencial",
@@ -649,15 +672,18 @@ def main():
     # llms.txt
     llms = f'''# Kimu Txalaparta
 
-> Kimu Txalaparta es un grupo de Donostia (Euskal Herria) que toca la txalaparta de madera y de piedra: conciertos, inmersión cultural y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales, en euskera y castellano.
+> Kimu Txalaparta es un grupo de Donostia (Euskadi, Euskal Herria) que toca la txalaparta de madera y de piedra: conciertos, inmersión txalaparta (inmersión cultural) y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales, en euskera y castellano. Referencia en txalaparta Euskadi.
 
 La gestión cultural y la contratación de Kimu Txalaparta corren a cargo de [Musubigara®]({MUSUBI}), consultoría de gestión cultural con sede en Vitoria-Gasteiz (Euskadi) especializada en representación y contratación de proyectos artísticos y culturales.
 
 ## Páginas
-- [Web (castellano)]({BASE}/): propuesta artística, biografía, multimedia, colaboraciones y contacto.
+- [Web (castellano)]({BASE}/): txalaparta Euskadi — propuesta artística, biografía, multimedia, colaboraciones y contacto.
 - [Webgunea (euskara)]({BASE}/eu/): orrialde bera euskaraz.
-- [Inmersión Kultural]({BASE}{INMERSION_PATH["es"]}): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
+- [Inmersión Kultural / Inmersión Txalaparta]({BASE}{INMERSION_PATH["es"]}): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
 - [Murgiltze Kulturala]({BASE}{INMERSION_PATH["eu"]}): aurrekoa euskaraz.
+
+## Términos clave
+txalaparta, txalaparta Euskadi, inmersión txalaparta, Kimu Txalaparta.
 
 ## Contratación
 - Gestión cultural y contratación: [Musubigara®]({MUSUBI})

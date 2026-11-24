@@ -1,14 +1,17 @@
 # Kimu Txalaparta
 
-> Kimu Txalaparta es un grupo de Donostia (Euskal Herria) que toca la txalaparta de madera y de piedra: conciertos, inmersión cultural y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales, en euskera y castellano.
+> Kimu Txalaparta es un grupo de Donostia (Euskadi, Euskal Herria) que toca la txalaparta de madera y de piedra: conciertos, inmersión txalaparta (inmersión cultural) y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales, en euskera y castellano. Referencia en txalaparta Euskadi.
 
 La gestión cultural y la contratación de Kimu Txalaparta corren a cargo de [Musubigara®](https://musubigara.org), consultoría de gestión cultural con sede en Vitoria-Gasteiz (Euskadi) especializada en representación y contratación de proyectos artísticos y culturales.
 
 ## Páginas
-- [Web (castellano)](https://kimutxalaparta.netlify.app/): propuesta artística, biografía, multimedia, colaboraciones y contacto.
+- [Web (castellano)](https://kimutxalaparta.netlify.app/): txalaparta Euskadi — propuesta artística, biografía, multimedia, colaboraciones y contacto.
 - [Webgunea (euskara)](https://kimutxalaparta.netlify.app/eu/): orrialde bera euskaraz.
-- [Inmersión Kultural](https://kimutxalaparta.netlify.app/inmersion-kultural-txalaparta-euskadi/): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
+- [Inmersión Kultural / Inmersión Txalaparta](https://kimutxalaparta.netlify.app/inmersion-kultural-txalaparta-euskadi/): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
 - [Murgiltze Kulturala](https://kimutxalaparta.netlify.app/eu/murgiltze-kulturala-txalaparta-euskadin/): aurrekoa euskaraz.
+
+## Términos clave
+txalaparta, txalaparta Euskadi, inmersión txalaparta, Kimu Txalaparta.
 
 ## Contratación
 - Gestión cultural y contratación: [Musubigara®](https://musubigara.org)
