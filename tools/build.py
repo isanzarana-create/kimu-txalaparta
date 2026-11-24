@@ -93,7 +93,7 @@ T = {
  "facts": [("2012","Nace Kimu"),("2016","Primer disco, «Kimu»"),("2","Txalapartas: madera y piedra"),("3","Continentes")],
  # 03
  "prop_h": "Propuesta artística",
- "spec": [("Músicos en escena", tbd("Nº de músicos")),("Instrumentos","Txalaparta de madera y de piedra"),("Duración", tbd("60–75 min")),("Idiomas","Euskera y castellano")],
+ "spec": [("Músicos en escena", "2"),("Instrumentos","Txalaparta de madera y de piedra"),("Duración", "60–75 min"),("Idiomas","Euskera y castellano")],
  "instr": [
   ("v-wCQIxSptv14", "Txalaparta de madera", "Tablones de madera sobre caballetes, golpeados con makilas. Es la txalaparta clásica: potente, rítmica y festiva, la que llamaba a la gente cuando la sidra estaba lista.", "Txalaparta de madera tocada a dúo"),
   ("v-bU86T62306g", "Txalaparta de piedra", "Losas de piedra afinadas que suman notas al ritmo. Permite construir melodías y abre la txalaparta a repertorios nuevos y a diálogos con otros instrumentos.", "Txalaparta de piedra tocada en una iglesia"),
@@ -115,7 +115,7 @@ T = {
  # 05
  "col_h": "Colaboraciones",
  "col_lead": "Ayuntamientos, instituciones, festivales, asociaciones y medios con los que hemos compartido escenario y proyectos.",
- "col_names": ["Festival Errobiko", "Mikrofilm Festival", "France Bleu Pays Basque", "Mercado de la Bretxa (Donostia)", tbd("+ ayuntamientos e instituciones")],
+ "col_names": ["Festival Errobiko", "Mikrofilm Festival", "France Bleu Pays Basque", "Mercado de la Bretxa (Donostia)"],
  "col_end": ", entre otros.",
  # 06
  "con_h": "Contacto",
@@ -174,7 +174,7 @@ T = {
  "bio_alt": "Kimu Txalaparta zurezko txalaparta jotzen agertoki batean",
  "facts": [("2012","Kimu sortzen da"),("2016","Lehen diskoa, «Kimu»"),("2","Txalaparta: zura eta harria"),("3","Kontinente")],
  "prop_h": "Proposamen artistikoa",
- "spec": [("Musikariak agertokian", tbd("Musikari kopurua")),("Tresnak","Zurezko eta harrizko txalaparta"),("Iraupena", tbd("60–75 min")),("Hizkuntzak","Euskara eta gaztelania")],
+ "spec": [("Musikariak agertokian", "2"),("Tresnak","Zurezko eta harrizko txalaparta"),("Iraupena", "60–75 min"),("Hizkuntzak","Euskara eta gaztelania")],
  "instr": [
   ("v-wCQIxSptv14", "Zurezko txalaparta", "Astoen gainean jarritako ohol luzeak, makilekin joak. Txalaparta klasikoa da: indartsua, erritmikoa eta jaiotsua, sagardoa prest zegoenean jendea deitzen zuena.", "Zurezko txalaparta binaka jotzen"),
   ("v-bU86T62306g", "Harrizko txalaparta", "Afinatutako harlauzak, erritmoari notak gehitzen dizkiotenak. Melodiak eraikitzeko aukera ematen du eta txalaparta errepertorio berrietara eta beste tresna batzuekiko elkarrizketara zabaltzen du.", "Harrizko txalaparta eliza batean jotzen"),
@@ -194,7 +194,7 @@ T = {
  "ig_h": "Instagram", "ig_txt": "Entseguak, kontzertuak eta agertoki atzean gertatzen dena.",
  "col_h": "Lankidetzak",
  "col_lead": "Agertokia eta proiektuak partekatu ditugun udal, erakunde, jaialdi, elkarte eta hedabideak.",
- "col_names": ["Errobiko Festibala", "Mikrofilm Festival", "France Bleu Pays Basque", "Bretxako azoka (Donostia)", tbd("+ udalak eta erakundeak")],
+ "col_names": ["Errobiko Festibala", "Mikrofilm Festival", "France Bleu Pays Basque", "Bretxako azoka (Donostia)"],
  "col_end": ", besteak beste.",
  "con_h": "Harremana",
  "con_box": "Denboraldi bat, jaialdi bat edo ekitaldi instituzional bat antolatzen ari zara? Kontaiguzu data, lekua eta edukiera, eta proposamena eta aurrekontua bidaliko dizkizugu.",
