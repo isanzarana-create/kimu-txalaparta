@@ -471,6 +471,7 @@ INMERSION = {
 <h2>Maridaje con producto de la tierra</h2>
 <p>Durante el concierto, el público disfruta de una cata adaptada al territorio en el que se desarrolla la experiencia:</p>
 <ul><li><strong>Sagardoa (sidra natural vasca):</strong> emblema de la cultura de la sagardotegi y compañera histórica de la txalaparta.</li><li><strong>Txakoli:</strong> en Bizkaia y Gipuzkoa, el vino blanco joven, fresco y atlántico de la costa vasca.</li><li><strong>Vino de Rioja Alavesa:</strong> en las experiencias celebradas en Araba, tierra de bodegas y viñedo con tradición centenaria.</li></ul>
+<figure style="margin:28px 0"><img src="/img/sagardotegi.webp" width="480" height="480" alt="Sidra sirviéndose en un vaso, cultura de la sagardotegi vasca" loading="lazy"><figcaption style="padding:10px 0 0;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;line-height:1.35">La sagardotegi, cuna de la sidra natural vasca</figcaption></figure>
 <p>Así, cada sesión se convierte en un viaje sensorial por el territorio: el sonido de la madera y el sabor del producto local se funden en un mismo relato.</p>
 <h2>¿A quién va dirigida?</h2>
 <p>La Inmersión Kultural está diseñada para un público que busca experiencias auténticas y de calidad:</p>
@@ -494,6 +495,7 @@ INMERSION = {
 <h2>Bertako produktuarekin maridaia</h2>
 <p>Kontzertuan zehar, publikoak esperientzia garatzen den lurraldera egokitutako dastaketa bat gozatzen du:</p>
 <ul><li><strong>Sagardoa (euskal sagardo naturala):</strong> sagardotegiaren kulturaren ikurra eta txalapartaren bidelagun historikoa.</li><li><strong>Txakolina:</strong> Bizkaian eta Gipuzkoan, euskal kostaldeko ardo zuri gaztea, freskoa eta atlantikoa.</li><li><strong>Arabako Errioxako ardoa:</strong> Araban egindako esperientzietan, upategi eta mahastien mendeetako tradizioa duen lurraldean.</li></ul>
+<figure style="margin:28px 0"><img src="/img/sagardotegi.webp" width="480" height="480" alt="Sagardoa edalontzi batean isurtzen, euskal sagardotegiaren kultura" loading="lazy"><figcaption style="padding:10px 0 0;font-size:11.5px;text-transform:uppercase;letter-spacing:.04em;line-height:1.35">Sagardotegia, euskal sagardo naturalaren jaiolekua</figcaption></figure>
 <p>Horrela, saio bakoitza lurraldean zeharreko bidaia sentsorial bihurtzen da: zurezko soinua eta bertako produktuaren zaporea narrazio bakar batean batzen dira.</p>
 <h2>Nori zuzenduta dago?</h2>
 <p>Murgiltze Kulturala esperientzia autentiko eta kalitatezkoen bila dabilen publikoarentzat diseinatuta dago:</p>
