@@ -59,7 +59,7 @@ T = {
  "newtab": "se abre en una pestaña nueva",
  "hero_box": "Txalaparta de madera y de piedra. Ritmo ancestral vasco, creación de hoy. <em>Kimu</em> significa «brote»: la tradición que vuelve a crecer en cada concierto.",
  "hero_side": ["Conciertos, inmersión cultural y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales.",
-               "En euskera y en castellano. Gestión y contratación: Musubigara®."],
+               "En euskera y en castellano. Gestión cultural y contratación: Musubigara®."],
  "cta_hire": "Contratar", "cta_watch": "Ver vídeos",
  "hero_cap": "Arditurriko meategia, Oiartzun",
  "ticker": "_Kimu Txalaparta_Zura eta harria_Madera y piedra_Txalaparta_",
@@ -120,7 +120,7 @@ T = {
  # 06
  "con_h": "Contacto",
  "con_box": "¿Programas una temporada, un festival o un evento institucional? Cuéntanos fecha, lugar y aforo y te enviamos propuesta y presupuesto.",
- "con_mgmt": "Gestión y contratación", "con_wa": "Escribir por WhatsApp",
+ "con_mgmt": "Gestión cultural y contratación", "con_wa": "Escribir por WhatsApp",
  "f": {"name":"Nombre y apellidos","org":"Entidad (ayuntamiento, festival, asociación…)","email":"Correo electrónico","phone":"Teléfono (opcional)",
        "type":"Tipo de actuación","types":["Concierto","Inmersión cultural (menos de 100 personas)","Actuación didáctica","Evento o protocolo","Otro"],
        "date":"Fecha y lugar previstos","cap":"Aforo aproximado","msg":"Mensaje",
@@ -128,7 +128,7 @@ T = {
        "send":"Enviar solicitud"},
  "wa_text": "Hola, quiero información para contratar a Kimu Txalaparta",
  "cta_float": "Hablemos",
- "foot_mgmt": "Gestión y contratación:", "legal": "Aviso legal", "privacy": "Política de privacidad",
+ "foot_mgmt": "Gestión cultural y contratación:", "legal": "Aviso legal", "privacy": "Política de privacidad",
  "legal_path": "/aviso-legal/", "privacy_path": "/privacidad/", "thanks_path": "/gracias/",
  "thanks_h": "Gracias", "thanks_p": "Hemos recibido tu solicitud. Te responderemos en breve desde ignacio@musubigara.org.", "back": "Volver a la web",
  "nf_h": "Página no encontrada", "nf_p": "Esta página no existe o ha cambiado de sitio.",
@@ -143,7 +143,7 @@ T = {
  "newtab": "fitxa berri batean irekitzen da",
  "hero_box": "Zurezko eta harrizko txalaparta. Antzinako euskal erritmoa, gaur egungo sorkuntza. <em>Kimu</em>: tradiziotik jaiotzen den adar berria, kontzertu bakoitzean hazten dena.",
  "hero_side": ["Kontzertuak, murgiltze kulturala eta emanaldi pedagogikoak udal, erakunde, jaialdi, elkarte eta kultur eragileentzat.",
-               "Euskaraz eta gaztelaniaz. Kudeaketa eta kontratazioa: Musubigara®."],
+               "Euskaraz eta gaztelaniaz. Kultur kudeaketa eta kontratazioa: Musubigara®."],
  "cta_hire": "Kontratatu", "cta_watch": "Bideoak ikusi",
  "hero_cap": "Arditurriko meategia, Oiartzun",
  "ticker": "_Kimu Txalaparta_Zura eta harria_Madera y piedra_Txalaparta_",
@@ -198,7 +198,7 @@ T = {
  "col_end": ", besteak beste.",
  "con_h": "Harremana",
  "con_box": "Denboraldi bat, jaialdi bat edo ekitaldi instituzional bat antolatzen ari zara? Kontaiguzu data, lekua eta edukiera, eta proposamena eta aurrekontua bidaliko dizkizugu.",
- "con_mgmt": "Kudeaketa eta kontratazioa", "con_wa": "WhatsAppez idatzi",
+ "con_mgmt": "Kultur kudeaketa eta kontratazioa", "con_wa": "WhatsAppez idatzi",
  "f": {"name":"Izen-abizenak","org":"Erakundea (udala, jaialdia, elkartea…)","email":"Helbide elektronikoa","phone":"Telefonoa (aukerakoa)",
        "type":"Emanaldi mota","types":["Kontzertua","Murgiltze kulturala (100 pertsonatik behera)","Emanaldi pedagogikoa","Ekitaldia edo protokoloa","Beste bat"],
        "date":"Aurreikusitako data eta lekua","cap":"Gutxi gorabeherako edukiera","msg":"Mezua",
@@ -206,7 +206,7 @@ T = {
        "send":"Eskaera bidali"},
  "wa_text": "Kaixo, Kimu Txalaparta kontratatzeko informazioa nahi nuke",
  "cta_float": "Hitz egin dezagun",
- "foot_mgmt": "Kudeaketa eta kontratazioa:", "legal": "Lege-oharra", "privacy": "Pribatutasun-politika",
+ "foot_mgmt": "Kultur kudeaketa eta kontratazioa:", "legal": "Lege-oharra", "privacy": "Pribatutasun-politika",
  "legal_path": "/eu/lege-oharra/", "privacy_path": "/eu/pribatutasun-politika/", "thanks_path": "/eu/eskerrik-asko/",
  "thanks_h": "Eskerrik asko", "thanks_p": "Zure eskaera jaso dugu. Laster erantzungo dizugu ignacio@musubigara.org helbidetik.", "back": "Webgunera itzuli",
  "nf_h": "Ez da orria aurkitu", "nf_p": "Orri hau ez dago edo lekuz aldatu da.",
@@ -310,6 +310,7 @@ def jsonld(t):
       "sameAs": [YT, IG, FB],
       "album": {"@type": "MusicAlbum", "name": "Kimu", "datePublished": "2016-09"},
       "contactPoint": {"@type": "ContactPoint", "contactType": "booking", "email": EMAIL, "telephone": "+" + WA_NUM, "availableLanguage": ["eu", "es"]},
+      "parentOrganization": {"@type": "Organization", "name": "Musubigara", "url": MUSUBI, "description": "Gestión cultural y contratación artística."},
     }
     return '<script type="application/ld+json">' + json.dumps(data, ensure_ascii=False) + "</script>"
 
@@ -335,7 +336,7 @@ def home(lang):
         (f'<p style="margin-top:10px"><a href="{INMERSION_PATH[lang]}">{e(INMERSION[lang]["more"])} →</a></p>' if i == 2 else '') +
         '</article>'
         for i,(h,p) in enumerate(t["offers"],1))
-    why = "".join(f"<li>{e(w)}</li>" for w in t["why"])
+    why = "".join(f"<li>{e(w).replace('Musubigara®','<a href=\"'+MUSUBI+'\" target=\"_blank\" rel=\"noopener\">Musubigara®</a>')}</li>" for w in t["why"])
     out.append(f'''<section class="sec" id="kimu" aria-labelledby="kimu-t">
 <h2 class="sec-h" id="kimu-t"><span class="idx">[01]</span>{t["kimu_h"]}</h2>
 <div class="intro"><p class="box">{e(t["kimu_box"])}</p><p class="who">{e(t["kimu_who"])}</p></div>
@@ -415,10 +416,11 @@ def home(lang):
     return "\n".join(out)
 
 # ── Páginas legales ──────────────────────────────────────────────
-TITULAR_ES = ("<p><strong>Titular:</strong> Ignacio Sanz Arana (Musubigara®), responsable de la gestión y contratación de Kimu Txalaparta.<br>"
+MUSUBI_LINK = f'<a href="{MUSUBI}" target="_blank" rel="noopener">Musubigara®</a>'
+TITULAR_ES = (f"<p><strong>Titular:</strong> Ignacio Sanz Arana ({MUSUBI_LINK}, gestión cultural), responsable de la gestión y contratación de Kimu Txalaparta.<br>"
               "<strong>NIF:</strong> 72752567W<br><strong>Domicilio:</strong> Pintor Pablo Uranga 12, 01008 Vitoria-Gasteiz (Álava), España.<br>"
               f"<strong>Correo electrónico:</strong> <a href=\"mailto:{EMAIL}\">{EMAIL}</a></p>")
-TITULAR_EU = ("<p><strong>Titularra:</strong> Ignacio Sanz Arana (Musubigara®), Kimu Txalapartaren kudeaketaren eta kontratazioaren arduraduna.<br>"
+TITULAR_EU = (f"<p><strong>Titularra:</strong> Ignacio Sanz Arana ({MUSUBI_LINK}, kultur kudeaketa), Kimu Txalapartaren kudeaketaren eta kontratazioaren arduraduna.<br>"
               "<strong>IFZ:</strong> 72752567W<br><strong>Helbidea:</strong> Pintor Pablo Uranga 12, 01008 Vitoria-Gasteiz (Araba), Espainia.<br>"
               f"<strong>Helbide elektronikoa:</strong> <a href=\"mailto:{EMAIL}\">{EMAIL}</a></p>")
 
@@ -426,7 +428,7 @@ LEGAL = {
  ("es","legal"): ("Aviso legal", f'''<p>Última actualización: 16 de noviembre de 2026</p>
 <h2>1. Datos identificativos</h2><p>En cumplimiento del artículo 10 de la Ley 34/2002, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se informa de que este sitio web es titularidad de:</p>{TITULAR_ES}
 <h2>2. Objeto y condiciones de uso</h2><p>Esta web presenta el proyecto musical Kimu Txalaparta y permite solicitar información para su contratación. El acceso y uso de la web atribuyen la condición de usuario e implican la aceptación de este aviso legal. El usuario se compromete a hacer un uso adecuado de los contenidos, conforme a la ley, la buena fe y el orden público.</p>
-<h2>3. Propiedad intelectual e industrial</h2><p>Los textos, fotografías, vídeos, diseño y demás contenidos de esta web pertenecen a Kimu Txalaparta, a Musubigara® o a sus respectivos autores, y se utilizan con la debida autorización. Queda prohibida su reproducción, distribución, comunicación pública o transformación sin autorización expresa y por escrito.</p>
+<h2>3. Propiedad intelectual e industrial</h2><p>Los textos, fotografías, vídeos, diseño y demás contenidos de esta web pertenecen a Kimu Txalaparta, a {MUSUBI_LINK} o a sus respectivos autores, y se utilizan con la debida autorización. Queda prohibida su reproducción, distribución, comunicación pública o transformación sin autorización expresa y por escrito.</p>
 <h2>4. Responsabilidad</h2><p>Se hace lo posible por que la información sea exacta y esté actualizada, pero no se garantiza la ausencia de errores ni la disponibilidad continua del sitio. La web contiene enlaces a sitios de terceros (YouTube, Instagram, Spotify, Facebook, WhatsApp) sobre cuyo contenido no se tiene control ni se asume responsabilidad.</p>
 <h2>5. Protección de datos y cookies</h2><p>El tratamiento de datos personales se rige por la <a href="/privacidad/">política de privacidad</a>. Esta web no instala cookies propias ni de análisis.</p>
 <h2>6. Legislación aplicable y jurisdicción</h2><p>Este aviso legal se rige por la legislación española. Para cualquier controversia, las partes se someten a los juzgados y tribunales de Vitoria-Gasteiz, salvo que la normativa de consumidores y usuarios establezca otro fuero imperativo.</p>'''),
@@ -441,7 +443,7 @@ LEGAL = {
  ("eu","legal"): ("Lege-oharra", f'''<p>Azken eguneratzea: 2026ko azaroaren 16a</p>
 <h2>1. Datu identifikatzaileak</h2><p>Informazioaren Gizartearen Zerbitzuen eta Merkataritza Elektronikoaren 34/2002 Legearen (LSSI-CE) 10. artikulua betez, jakinarazten da webgune honen titularra hau dela:</p>{TITULAR_EU}
 <h2>2. Xedea eta erabilera-baldintzak</h2><p>Webgune honek Kimu Txalaparta musika-proiektua aurkezten du eta hura kontratatzeko informazioa eskatzeko aukera ematen du. Webgunera sartzeak eta hura erabiltzeak erabiltzaile izaera ematen du eta lege-ohar hau onartzea dakar.</p>
-<h2>3. Jabetza intelektuala eta industriala</h2><p>Webgune honetako testuak, argazkiak, bideoak, diseinua eta gainerako edukiak Kimu Txalapartarenak, Musubigara®-renak edo dagozkien egileenak dira, eta behar bezalako baimenarekin erabiltzen dira. Debekatuta dago horiek erreproduzitzea, banatzea, jendaurrean komunikatzea edo eraldatzea, berariazko baimen idatzirik gabe.</p>
+<h2>3. Jabetza intelektuala eta industriala</h2><p>Webgune honetako testuak, argazkiak, bideoak, diseinua eta gainerako edukiak Kimu Txalapartarenak, {MUSUBI_LINK}-renak edo dagozkien egileenak dira, eta behar bezalako baimenarekin erabiltzen dira. Debekatuta dago horiek erreproduzitzea, banatzea, jendaurrean komunikatzea edo eraldatzea, berariazko baimen idatzirik gabe.</p>
 <h2>4. Erantzukizuna</h2><p>Ahalegina egiten da informazioa zehatza eta eguneratua izan dadin, baina ez da bermatzen akatsik ez dagoenik edo webgunea etengabe erabilgarri dagoenik. Webguneak hirugarrenen guneetarako estekak ditu (YouTube, Instagram, Spotify, Facebook, WhatsApp), eta horien edukiaren gaineko erantzukizunik ez da hartzen.</p>
 <h2>5. Datuen babesa eta cookieak</h2><p>Datu pertsonalen tratamendua <a href="/eu/pribatutasun-politika/">pribatutasun-politikak</a> arautzen du. Webgune honek ez du cookie propiorik ez analitikorik instalatzen.</p>
 <h2>6. Legeria aplikagarria eta jurisdikzioa</h2><p>Lege-ohar hau Espainiako legeriak arautzen du. Edozein gatazkatarako, aldeak Vitoria-Gasteizko epaitegi eta auzitegien mende jartzen dira, kontsumitzaileen araudiak beste foru derrigorrezko bat ezartzen ez badu.</p>'''),
@@ -649,6 +651,24 @@ def main():
     sm.append("</urlset>")
     write("/sitemap.xml", "\n".join(sm))
     write("/robots.txt", f"User-agent: *\nAllow: /\n\nSitemap: {BASE}/sitemap.xml\n")
+    # llms.txt
+    llms = f'''# Kimu Txalaparta
+
+> Kimu Txalaparta es un grupo de Donostia (Euskal Herria) que toca la txalaparta de madera y de piedra: conciertos, inmersión cultural y actuaciones didácticas para ayuntamientos, instituciones, festivales, asociaciones y agentes culturales, en euskera y castellano.
+
+La gestión cultural y la contratación de Kimu Txalaparta corren a cargo de [Musubigara®]({MUSUBI}), consultoría de gestión cultural con sede en Vitoria-Gasteiz (Euskadi) especializada en representación y contratación de proyectos artísticos y culturales.
+
+## Páginas
+- [Web (castellano)]({BASE}/): propuesta artística, biografía, multimedia, colaboraciones y contacto.
+- [Webgunea (euskara)]({BASE}/eu/): orrialde bera euskaraz.
+- [Inmersión Kultural]({BASE}{INMERSION_PATH["es"]}): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
+- [Murgiltze Kulturala]({BASE}{INMERSION_PATH["eu"]}): aurrekoa euskaraz.
+
+## Contratación
+- Gestión cultural y contratación: [Musubigara®]({MUSUBI})
+- Correo: {EMAIL}
+'''
+    write("/llms.txt", llms)
     print("OK")
 
 if __name__ == "__main__":
