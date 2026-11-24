@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kimutxalaparta.netlify.app/sitemap.xml
+Sitemap: https://kimutxalaparta.org/sitemap.xml

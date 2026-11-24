@@ -9,7 +9,7 @@ import json, html, os, pathlib, datetime
 
 ROOT = pathlib.Path(__file__).resolve().parent.parent
 PUB = ROOT / "public"
-BASE = "https://kimutxalaparta.netlify.app"
+BASE = "https://kimutxalaparta.org"
 TODAY = datetime.date.today().isoformat()
 
 EMAIL = "ignacio@musubigara.org"

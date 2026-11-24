@@ -5,10 +5,10 @@
 La gestión cultural y la contratación de Kimu Txalaparta corren a cargo de [Musubigara®](https://musubigara.org), consultoría de gestión cultural con sede en Vitoria-Gasteiz (Euskadi) especializada en representación y contratación de proyectos artísticos y culturales.
 
 ## Páginas
-- [Web (castellano)](https://kimutxalaparta.netlify.app/): txalaparta Euskadi — propuesta artística, biografía, multimedia, colaboraciones y contacto.
-- [Webgunea (euskara)](https://kimutxalaparta.netlify.app/eu/): orrialde bera euskaraz.
-- [Inmersión Kultural / Inmersión Txalaparta](https://kimutxalaparta.netlify.app/inmersion-kultural-txalaparta-euskadi/): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
-- [Murgiltze Kulturala](https://kimutxalaparta.netlify.app/eu/murgiltze-kulturala-txalaparta-euskadin/): aurrekoa euskaraz.
+- [Web (castellano)](https://kimutxalaparta.org/): txalaparta Euskadi — propuesta artística, biografía, multimedia, colaboraciones y contacto.
+- [Webgunea (euskara)](https://kimutxalaparta.org/eu/): orrialde bera euskaraz.
+- [Inmersión Kultural / Inmersión Txalaparta](https://kimutxalaparta.org/inmersion-kultural-txalaparta-euskadi/): concierto inmersivo de txalaparta con cata de producto local (sidra, txakoli o vino de Rioja Alavesa) en sagardotegis, txokos y enclaves de Euskadi.
+- [Murgiltze Kulturala](https://kimutxalaparta.org/eu/murgiltze-kulturala-txalaparta-euskadin/): aurrekoa euskaraz.
 
 ## Términos clave
 txalaparta, txalaparta Euskadi, inmersión txalaparta, Kimu Txalaparta.
