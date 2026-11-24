@@ -19,6 +19,7 @@ YT = "https://www.youtube.com/@kimutxalaparta"
 FB = "https://www.facebook.com/kimutxalaparta/"
 SPOTIFY = "https://open.spotify.com/search/Kimu%20Txalaparta"  # PENDIENTE: enlace al perfil de artista
 MUSUBI = "https://musubigara.org"
+MUSUBI_LINK = f'<a href="{MUSUBI}" target="_blank" rel="noopener">Musubigara®</a>'
 
 def e(s):
     return html.escape(s, quote=True)
@@ -87,7 +88,10 @@ T = {
   "Formato adaptable y logística ligera: acústico en salas pequeñas y un rider sencillo para grandes aforos.",
   "Mediación en euskera y en castellano: contamos al público de dónde viene la txalaparta y cómo se toca.",
   "Un único interlocutor: Musubigara® se ocupa de la contratación, la documentación y la coordinación técnica.",
+  "¿Buscas gestión cultural para tu festival, institución o proyecto artístico? Musubigara® ofrece consultoría y representación artística más allá de Kimu Txalaparta.",
  ],
+ "col_note": "Toda la gestión institucional y la contratación de Kimu Txalaparta las coordina Musubigara®, consultoría de gestión cultural.",
+ "foot_mgmt_desc": "Consultoría de gestión cultural",
  # 02
  "bio_h": "Biografía",
  "bio": [
@@ -174,7 +178,10 @@ T = {
   "Formatu egokigarria eta logistika arina: akustikoa areto txikietan eta rider sinplea edukiera handietarako.",
   "Bitartekaritza euskaraz eta gaztelaniaz: txalaparta nondik datorren eta nola jotzen den kontatzen diogu publikoari.",
   "Solaskide bakarra: Musubigara®-k kudeatzen ditu kontratazioa, dokumentazioa eta koordinazio teknikoa.",
+  "Zure jaialdi edo erakundearentzat kultur kudeaketan aholkularitza behar duzu? Musubigara®-k aholkularitza eta ordezkaritza artistikoa eskaintzen ditu Kimu Txalapartatik harago.",
  ],
+ "col_note": "Kimu Txalapartaren kudeaketa instituzional eta kontratazio guztia Musubigara®-k koordinatzen du, kultur kudeaketako aholkularitzak.",
+ "foot_mgmt_desc": "Kultur kudeaketako aholkularitza",
  "bio_h": "Biografia",
  "bio": [
   "Kimu 2012an sortu zen, urteetan elkarrekin jo ondoren, galdera batekin: noraino irits daiteke txalaparta? Taldeak tresnaren aukera erritmiko, harmoniko eta melodikoak arakatzeko helburua jarri zuen. Baserrian jaio zen tresna, landa-lanei eta sagardoaren jaiari lotua, eta XX. mendearen erdialdean galtzeko zorian egon zen. 2016ko irailean <em>Kimu</em> aurkeztu zuen, lehen diskoa, txalaparta bakarkako musika-tresna delarik.",
@@ -297,7 +304,7 @@ def footer(t):
     home = t["path"]
     return f'''<footer class="foot">
 <div class="c1"><p><strong>Kimu Txalaparta</strong></p><p>Donostia · Euskal Herria</p>{social(t)}</div>
-<div class="c2"><p>{t["foot_mgmt"]}</p><p><a href="{MUSUBI}" target="_blank" rel="noopener">Musubigara®</a></p><p><a href="mailto:{EMAIL}">{EMAIL}</a></p></div>
+<div class="c2"><p>{t["foot_mgmt"]}</p><p><a href="{MUSUBI}" target="_blank" rel="noopener">Musubigara®</a></p><p><a href="{MUSUBI}" target="_blank" rel="noopener">{e(t["foot_mgmt_desc"])}</a></p><p><a href="mailto:{EMAIL}">{EMAIL}</a></p></div>
 <div class="c3"><ul><li><a href="{t["legal_path"]}">{t["legal"]}</a></li><li><a href="{t["privacy_path"]}">{t["privacy"]}</a></li></ul><p style="margin-top:12px">© 2026 Kimu Txalaparta</p></div>
 <div class="big" aria-hidden="true">KIMU_</div>
 </footer>
@@ -407,7 +414,7 @@ def home(lang):
     out.append(f'''<details class="sec acc" id="colaboraciones" open>
 <summary><h2 class="sec-h" id="col-t"><span class="idx">[05]</span>{t["col_h"]}</h2></summary>
 <div class="acc-body">
-<div class="collab"><p class="lead">{e(t["col_lead"])}</p><p class="names">{names}{t["col_end"]}</p></div>
+<div class="collab"><p class="lead">{e(t["col_lead"])}</p><p class="names">{names}{t["col_end"]}</p><p class="who" style="margin-top:14px">{e(t["col_note"]).replace('Musubigara®', MUSUBI_LINK)}</p></div>
 </div></details>''')
     # 06
     opts = "".join(f"<option>{e(o)}</option>" for o in f["types"])
@@ -439,7 +446,6 @@ def home(lang):
     return "\n".join(out)
 
 # ── Páginas legales ──────────────────────────────────────────────
-MUSUBI_LINK = f'<a href="{MUSUBI}" target="_blank" rel="noopener">Musubigara®</a>'
 TITULAR_ES = (f"<p><strong>Titular:</strong> Ignacio Sanz Arana ({MUSUBI_LINK}, gestión cultural), responsable de la gestión y contratación de Kimu Txalaparta.<br>"
               "<strong>NIF:</strong> 72752567W<br><strong>Domicilio:</strong> Pintor Pablo Uranga 12, 01008 Vitoria-Gasteiz (Álava), España.<br>"
               f"<strong>Correo electrónico:</strong> <a href=\"mailto:{EMAIL}\">{EMAIL}</a></p>")
@@ -513,6 +519,7 @@ INMERSION = {
   "why_h": "Por qué vivir la Inmersión Kultural",
   "why_p": "Porque condensa en una sola experiencia dos de los grandes referentes que Euskadi ofrece al mundo: su patrimonio musical inmaterial y su cultura gastronómica. Una propuesta auténtica, cercana y diferente, que sitúa al visitante en el corazón de la identidad vasca, refuerza el atractivo turístico del territorio y convierte cada viaje en un recuerdo difícil de olvidar.",
   "cta_p": "¿Quieres incorporar la Inmersión Kultural a tu programa, evento o establecimiento? Ponte en contacto con Kimu Txalaparta y diseñaremos contigo la experiencia.",
+  "cta_note": "Esta y otras experiencias turístico-culturales en Euskadi las gestiona Musubigara®, consultoría de gestión cultural y turismo experiencial.",
   "cta_label": "Contratar", "cta_href": "/#contacto",
  },
  "eu": {
@@ -544,6 +551,7 @@ INMERSION = {
   "why_h": "Zergatik bizi Murgiltze Kulturala",
   "why_p": "Euskadik munduari eskaintzen dizkion bi erreferente handi esperientzia bakar batean biltzen dituelako: bere ondare musikal immateriala eta bere kultura gastronomikoa. Proposamen autentiko, hurbil eta ezberdina, bisitaria euskal identitatearen bihotzean jartzen duena, lurraldearen erakargarritasun turistikoa indartzen duena eta bidaia bakoitza ahazteko zaila den oroitzapen bihurtzen duena.",
   "cta_p": "Murgiltze Kulturala zure programan, ekitaldian edo establezimenduan txertatu nahi duzu? Jarri harremanetan Kimu Txalapartarekin eta elkarrekin diseinatuko dugu esperientzia.",
+  "cta_note": "Esperientzia hau eta Euskadiko beste turismo-kultur esperientzia batzuk Musubigara®-k kudeatzen ditu, kultur kudeaketako eta turismo esperientzialeko aholkularitzak.",
   "cta_label": "Kontratatu", "cta_href": "/eu/#contacto",
  },
 }
@@ -616,6 +624,7 @@ def inmersion_page(lang):
 <div class="imm-why reveal">
 <p>{e(m["why_p"])}</p>
 <p>{e(m["cta_p"])}</p>
+<p>{e(m["cta_note"]).replace('Musubigara®', MUSUBI_LINK)}</p>
 </div>
 <p class="reveal" style="margin-top:8px;display:flex;gap:14px;flex-wrap:wrap">
 <a class="btn" href="{m["cta_href"]}">{e(m["cta_label"])} {ICON["arrow"]}</a>
